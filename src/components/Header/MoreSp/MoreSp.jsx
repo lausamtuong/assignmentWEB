@@ -8,6 +8,7 @@ import xe3 from "../../../images/xe3.png";
 import xe4 from "../../../images/xe4.png";
 import Faliz from "../../../images/Faliz.svg";
 import Theon from "../../../images/Theon.svg";
+import {useNavigate,Link} from 'react-router-dom'
 const ListCar = [
   {
     name: "LUX_SA_2.0",
@@ -53,6 +54,7 @@ const ListMoto = [
   },
   ]
 const Moresp = () => {
+  const navigate = useNavigate()
   const [active, setActive] = useState(true);
   return (
     <div className="MoreSp_wrap">
@@ -100,7 +102,9 @@ const Moresp = () => {
             
           </div>
         ) }
-        <p className="Sp__button">Xem tất cả các xe</p>
+        <div className="link__button">
+          <Link to='./product' className="Sp__button" onClick={()=> navigate('./product')}>Xem tất cả các xe</Link>
+        </div>
       </div>
     </div>
   );
