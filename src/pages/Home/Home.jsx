@@ -31,6 +31,7 @@ import feliz_ from "../../images/feliz_.png";
 import theon_ from "../../images/theon_.png";
 import bg_tab from "../../images/bg.jpg";
 import bg_mobile from "../../images/bg_mobile.png";
+import { useSelector } from "react-redux";
 const ListCar = [
   {
     img: LuxA20_,
@@ -116,6 +117,8 @@ const ListMoto = [
   },
 ];
 const Home = ({ width }) => {
+  const ITEM = useSelector(state => state.API.CAR)
+  
   return (
     <div className="Home__wrapper">
       <div className="Home__video">
@@ -283,6 +286,7 @@ const Home = ({ width }) => {
                   title={item.title}
                   price={item.price}
                   type={item.type}
+
                 />
               </SwiperSlide>
             ))}

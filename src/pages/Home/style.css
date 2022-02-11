@@ -87,6 +87,12 @@ img {
   width: 273px;
   padding: 13px 0;
 }
+.more-information:hover,.deposit:hover {
+  background: #fff;
+  color:#1464f4;
+  transition: all .25s;
+}
+
 .block-new-home-cntm {
   background: #fff;
   margin-top: 10px;

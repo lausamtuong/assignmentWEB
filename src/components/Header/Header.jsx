@@ -75,8 +75,8 @@ const Header = () => {
             
             </li>
           </ul>
-          <button className="btn" onClick={()=>navigate('/login')}>
-            <span className="btn-text" > Tài khoản</span>
+          <button className="button" onClick={()=>navigate('/login')}>
+            <span className="button-text" > Tài khoản</span>
           </button>
         </div>
         <div className="icon">

@@ -6,6 +6,7 @@ import React from "react";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import  { useState} from "react";
+import Route_ from "./config/Route_";
 function App() {
   const [width,setWidth] = useState(window.innerWidth<660?1:window.innerWidth<990?2:3)
   window.addEventListener("resize", ()=>{
@@ -15,9 +16,7 @@ function App() {
     <Router>
     <Header/>
       <Routes>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/register" element={<Register />}></Route>
-        <Route path="/" element={<Home width={width} />}></Route>
+        <Route path='*' element ={<Route_ width={width}/>} />
       </Routes>
       <Footer/>
     </Router>
