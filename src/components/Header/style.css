@@ -174,24 +174,12 @@ a {
 .view {
   display: block;
 }
-.san_pham:hover .MoreSp_wrap {
-  display: block;
-  opacity: 1;
-}
 
-.san_pham::before {
-  content: "";
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 0;
-}
-.MoreSp_wrap:hover {
-  display: block;
 
-  transform: translateY(0%);
-  transition: all 0.3s;
-}
+
+
+
+
 
 @media only screen and (min-width: 1024px) {
   .overlay {
@@ -233,5 +221,9 @@ a {
   }
   .MoreUd_wrap {
     display: none;
+  }
+  .header {
+    
+    margin: 0px 
   }
 }

@@ -10,7 +10,7 @@ import {
 import { FcNext } from "react-icons/fc";
 import { BsFacebook } from "react-icons/bs";
 const items = [
-  { name: "Giới thiệu", active: false,sudo:["Về VinFast","Về VinGroup", "Về Investor"] },
+  { name: "Giới thiệu", active: false,sudo:["Về VietFast","Về VietGroup", "Về Investor"] },
   { name: "Xe ô tô", active: false,sudo:["VF e34","LUX SA2.0", "LUX A2.0","FAdil"]},
   { name: "Xe máy điện", active: false ,sudo:["Theon","Klara A2","Impes","LuDo","Tempest"]},
   { name: "Tin nổi bật", active: false ,sudo:["Ưu đãi","Công Ty", "Cộng đồng"]},
@@ -25,11 +25,12 @@ const Footer = () => {
       <div className="footer__sub">
         <div className="footer__left">
           <img
-            alt="VinFast"
+            alt="VietFast"
             src="https://vinfastauto.com/themes/porto/img/logo-footer.svg"
+            className="footer__img-vietfast"
           />
           <div className="footer__left-info">
-            <h2>Công ty TNHH Kinh doanh Thương mại và Dịch vụ VinFast</h2>
+            <h2>Công ty TNHH Kinh doanh Thương mại và Dịch vụ VietFast</h2>
             <div>
               <h4>
                 Số đăng ký kinh doanh: <span className="slim">0108926276</span>
@@ -53,7 +54,7 @@ const Footer = () => {
               Địa chỉ:
               <span className="slim">
                 {" "}
-                Số 7, đường Bằng Lăng 1, Khu đô thị sinh thái Vinhomes
+                Số 7, đường Bằng Lăng 1, Khu đô thị sinh thái Viethomes
                 Riverside, Phường Việt Hưng, Quận Long Biên, Thành phố Hà Nội,
                 Việt Nam
               </span>
@@ -112,7 +113,7 @@ const Footer = () => {
               <a href="#">laptrinhweb@hcmut.edu.vn</a>
             </div>
 
-            <p>Kết nối với VinFast</p>
+            <p>Kết nối với VietFast</p>
             <div>
               {" "}
               <div className="logo__icon yt">
@@ -127,7 +128,7 @@ const Footer = () => {
         <div className="footer__right">
           <div>Đăng ký nhận thông tin</div>
           <div>
-            Đăng ký nhận thông tin chương trình khuyến mãi, dịch vụ từ VinFast
+            Đăng ký nhận thông tin chương trình khuyến mãi, dịch vụ từ VietFast
           </div>
           <div>
             <input
@@ -139,12 +140,12 @@ const Footer = () => {
           </div>
           <div>
             Bằng cách đăng ký, Quý khách xác nhận đã đọc, hiểu và đồng ý với
-           <span className="blue"> Chính sách quyền riêng tư </span>của VinFast.
+           <span className="blue"> Chính sách quyền riêng tư </span>của VietFast.
           </div>
         </div>
       </div>
       <div className="footer__sign">
-        VinFast. All rights reserved. © Copyright 2020
+        VietFast. All rights reserved. © Copyright 2020
       </div>
     </div>
   );

@@ -1,18 +1,34 @@
 @use '../../scss/' as * ;
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+.detail {
+    position: relative;
+    .overlay__loading{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 .detail__header {
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 6fr 4fr;
     padding: 2rem;
+    padding-top: 8rem;
     justify-content: space-between;
     align-items: center;
     background-image: url('https://shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/vi_VN/v1644337335943/images/theon/bg_theon1.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 650px;
+    @include mobile {
+        height: 50vh;
+    }
     background-size: cover;
     position: relative;
     @include tablet {
@@ -75,12 +91,17 @@
             font-weight: bold;
             @include tablet {
                 font-size: 100px;
-                
+            }
+            @include mobile {
+                font-size: 50px;
             }
         }
         &--highlight {
             display: flex;
             gap:12px;
+            @include mobile {
+                gap:0;
+            }
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -91,7 +112,7 @@
                 letter-spacing: 12px;
                 @include tablet {
                     font-size: 24px;
-                letter-spacing: 5px;
+                    letter-spacing: 5px;
 
                 }
             }
@@ -101,8 +122,11 @@
                 font-family: 'Rowdies', cursive;
                  @include tablet {
                     font-size: 20px;
-                letter-spacing: 5px;
-
+                    letter-spacing: 5px;
+                }
+                @include mobile {
+                    font-size: 14px;
+                    letter-spacing: 2px;
                 }
             }
             
@@ -122,6 +146,9 @@
     @include tablet {
         display: block;
     }
+    @include mobile {
+        padding: 0;
+    }
     .product__btn {
         padding: 0 5rem;
         button {
@@ -140,7 +167,6 @@
         "2 3"
         "4 5";
         text-align: center;
-        
         .label {
             font-weight: bold;
             font-size: 24px;
@@ -148,8 +174,13 @@
         }
         li {
             padding: 3rem 2rem;
-            min-height: 200px;
-            
+            // min-height: 200px;
+        }
+        @include mobile {
+            li {padding:1rem;}
+            .label {
+                font-size: 16px;
+            }
         }
         .child-0 {
             grid-area: "0";
@@ -253,4 +284,5 @@
         height: 100%;
         object-fit: contain;
     }
+    
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 import video from "../../images/home__vd.mp4";
 import v_light from "../../images/Vlight.svg";
 import cntm_1 from "../../images/cntm_1.png";
@@ -40,6 +40,7 @@ const ListCar = [
     name: "LUX A2.0",
     type: "SEDAN",
     price: "từ 949 triệu",
+    params: "852e08d81c1fbb0662d06e45e4e24216",
   },
   {
     img: Fadil_,
@@ -48,6 +49,8 @@ const ListCar = [
     name: "FADIL",
     type: "HATCHBACK",
     price: "từ 382 triệu",
+    params: "10a8089a99d768720e714c4ea2d31bc1",
+
   },
   {
     img: LuxSA_,
@@ -56,6 +59,8 @@ const ListCar = [
     name: "LUX SA2.0",
     type: "SUV",
     price: "từ 1.2 tỷ",
+    params: "6b8d7fcc6d6935e68cbb0c9463123c0a",
+
   },
   {
     img: VFe34_,
@@ -64,6 +69,8 @@ const ListCar = [
     name: "VF e34",
     type: "SUV",
     price: "690 triệu",
+    params: "4595e77181130d268b637271ebfc0008",
+
   },
   {
     img: Pre_,
@@ -72,6 +79,8 @@ const ListCar = [
     name: "PRESIDENT",
     type: "SUV",
     price: "từ 3.8 tỷ",
+    params: "f260104e761c83997b267621c1ff11e3",
+
   },
 ];
 const ListMoto = [
@@ -90,6 +99,8 @@ const ListMoto = [
     name: "FELIZ",
     type: "TRUNG CẤP",
     price: "24.9 triệu",
+    params: "a2eea0d38e433c288b4fab47862c574c",
+
   },
   {
     img: klaraS_,
@@ -98,6 +109,8 @@ const ListMoto = [
     name: "KLARA S",
     type: "TRUNG CẤP",
     price: "39.9 triệu",
+    params: "27cd252a8e5cd53f76aec0e5ba8af043",
+
   },
   {
     img: tempest_,
@@ -106,6 +119,8 @@ const ListMoto = [
     name: "TEMPEST",
     type: "PHỔ THÔNG",
     price: "19.25 triệu",
+    params: "0dad95c3f89c96b58d8d34d23d75136f",
+
   },
   {
     img: klaraA2_,
@@ -114,6 +129,8 @@ const ListMoto = [
     name: "KLARA A2",
     type: "TRUNG CẤP",
     price: "26.9 triệu",
+    params: "f4b6854c76fbc79c2528dabbf7c4a495",
+
   },
 ];
 const Home = ({ width }) => {
@@ -272,7 +289,7 @@ const Home = ({ width }) => {
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={50}
             slidesPerView={width}
-            navigation
+            
             pagination={{ clickable: true }}
             loop={true}
             autoplay={true}
@@ -286,6 +303,7 @@ const Home = ({ width }) => {
                   title={item.title}
                   price={item.price}
                   type={item.type}
+                  params={item.params}
 
                 />
               </SwiperSlide>
@@ -317,7 +335,7 @@ const Home = ({ width }) => {
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={50}
             slidesPerView={width}
-            navigation
+           
             pagination={{ clickable: true }}
             loop={true}
             autoplay={true}
@@ -331,6 +349,7 @@ const Home = ({ width }) => {
                   title={item.title}
                   price={item.price}
                   type={item.type}
+                  params={item.params}
                 />
               </SwiperSlide>
             ))}
@@ -341,12 +360,12 @@ const Home = ({ width }) => {
         <img alt="background-tablet" className='background-tablet' src={bg_tab} />
         <img alt='background-mobile' className='background-mobile' src={bg_mobile}/>
         <div className="background__title">
-          Hành trình chinh phục thế giới
+         <p> Hành trình chinh phục thế giới</p>
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={50}
             slidesPerView={1}
-            navigation
+           
             pagination={{ clickable: true }}
             loop={true}
             autoplay={true}

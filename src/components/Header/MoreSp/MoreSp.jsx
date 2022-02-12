@@ -11,12 +11,12 @@ import Theon from "../../../images/Theon.svg";
 import {useNavigate,Link} from 'react-router-dom'
 const ListCar = [
   {
-    name: "LUX_SA_2.0",
+    name: "LUX SA 2.0",
     img: LUX_SA,
     price: `Từ 1.220.965.000 vnđ`,
   },
   {
-    name: "LUX_A2.0",
+    name: "LUX A2.0",
     img: LUX_A,
     price: `Từ 949.435.000 vnđ`,
   },

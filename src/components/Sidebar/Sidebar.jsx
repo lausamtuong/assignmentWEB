@@ -22,8 +22,8 @@ const NavItems = [
   {
     display: "Sản phẩm",
     icon: <AiFillCar />,
-    to: "/sanpham",
-    section: "sanpham",
+    to: "/product",
+    section: "product",
   },
   {
     display: "Tin Tức",
@@ -31,12 +31,7 @@ const NavItems = [
     to: "/news",
     section: "news",
   },
-  {
-    display: "Ưu đãi",
-    icon: <AiOutlineGift />,
-    to: "/gift",
-    section: "gift",
-  },
+ 
 ];
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -83,12 +78,12 @@ const Sidebar = () => {
         </Link>
       ))}
 
-      <div className="button" onClick={() => navigate("login")}>
-        <button className="btn">
-          <span className="btn-text"> Tài khoản</span>
+      <div className="button_" onClick={() => navigate("login")}>
+        <button className="button">
+          <span className="button-text"> Tài khoản</span>
         </button>
       </div>
-      <li className="nav__tablet-item">
+      <li className="nav__tablet-item" onClick={() => navigate("contact")} style={{cursor: "pointer"}}>
         <GrContact />
         Liên hệ
       </li>

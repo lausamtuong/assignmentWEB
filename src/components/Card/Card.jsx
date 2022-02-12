@@ -1,7 +1,9 @@
 import React from "react";
 import "./style.css";
+import {useNavigate} from 'react-router-dom'
 
-const Card = ({ title, name, gif, type, price, img }) => {
+const Card = ({ title, name, gif, type, price, img, params }) => {
+  const navigate = useNavigate()
   return (
     <div className="Card-wrapper">
       <div className="Card_img">
@@ -25,7 +27,7 @@ const Card = ({ title, name, gif, type, price, img }) => {
           </div>
       </div>
       <div className="Card_btn">
-      <p className="Sp__button">Xem chi tiết</p>
+      <p className="Sp__button" onClick={()=>navigate(`./product/detail/${params}`)}>Xem chi tiết</p>
       </div>
     </div>
   );

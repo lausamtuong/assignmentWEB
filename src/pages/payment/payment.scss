@@ -128,12 +128,17 @@
         .thanhtoan {
             @include tablet {
                 padding: 12px;
+                
             }
             background: $white;
             padding: 2rem;
             .label {
                 font-size: 20px;
                 line-height: 2;
+                @include mobile {
+                    text-align: center;
+                    font-weight: bold;
+                }
                 
             }
             span {
@@ -149,7 +154,9 @@
         background: $white;
         padding: 2rem;
         font-size: 20px;
-        
+        @include mobile {
+            padding: 1rem;
+        }
         .image img {
             width: 100%;
             height: 100%;
@@ -181,6 +188,9 @@
                 opacity: .6;
             }
         }
+    }
+    .btn__payment {
+        font-size: 22px;
     }
     .overlay__loading,.success {
         position: absolute;

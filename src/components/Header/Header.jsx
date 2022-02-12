@@ -38,10 +38,10 @@ const NavItems = [
   
   },
   {
-    display: "Ưu đãi",
+    display: "Liên hệ",
     icon: <AiOutlineGift />,
-    to: "/gift",
-    section: "gift",
+    to: "contact",
+    section: "contact",
     class_name:'gift_',
       
   
@@ -98,7 +98,7 @@ const Header = () => {
           >
             <FaTimes />
           </div>
-          <div className="nav__tablet-title">VinFast</div>
+          <div className="nav__tablet-title">VietFast</div>
           <Sidebar />
         </div>
       </div>

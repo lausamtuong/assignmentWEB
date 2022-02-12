@@ -1,7 +1,8 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import {useSelector} from 'react-redux'
 import './detail.scss'
+
 
 const Detail = () => {
     const api = useSelector(state => state.API)

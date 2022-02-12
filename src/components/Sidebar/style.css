@@ -3,3 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
+.nav__tablet-item:hover {
+    color:rgb(60, 148, 248)
+}

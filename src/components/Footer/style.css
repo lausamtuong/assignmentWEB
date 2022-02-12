@@ -2,7 +2,7 @@
   background: #202224;
   position: absolute;
   z-index: 100;
-  
+  width: 100%;
 }
 .footer__sub {
   color: #c2c8b1;
@@ -162,3 +162,9 @@ a {
     
   }
 }
+@media only screen and (max-width: 520px) {
+  .footer__img-vietfast{
+    width:80%
+  }
+}
+

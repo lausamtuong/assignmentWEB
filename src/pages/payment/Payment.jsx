@@ -26,6 +26,7 @@ const Payment = () => {
         setSuccess(true)
         },3000)
     }
+    const navigate = useNavigate()
   return <form className='payment' onSubmit={submitHandle}>
       {loading&&<div className="overlay__loading">
            <DotLoader color={'#ffffff'} loading={loading} css={override} size={150} />
@@ -39,7 +40,7 @@ const Payment = () => {
           <p>Đặt hàng thành công. Chúc bạn mua sắm vui vẻ</p>
           </div>
           <div className="home">
-              <button type='button' className='btn btn__home'>Về trang chủ</button>
+              <button type='button' className='btn btn__home' onClick={()=>navigate('/')}>Về trang chủ</button>
           </div>
           </div>
       </div>}
