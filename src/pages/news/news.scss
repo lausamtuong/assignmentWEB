@@ -5,19 +5,22 @@
     @include tablet {
         padding: 0;
     }
+    @include mobile {
+        padding: 0;
+    }
     display: flex;
     flex-direction: column;
     gap:2rem;
      .label {
-                width: 100%;
-                font-weight: bold;
-                font-size: 1rem;
-                align-items: center;
-                background: $blue;
-                width: fit-content;
-                padding: 10px;
-                border-radius: 12px;
-                color: $white;
+            width: 100%;
+            font-weight: bold;
+            font-size: 1rem;
+            align-items: center;
+            background: $blue;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 12px;
+            color: $white;
     }
     &__header {
         display: grid;
@@ -27,17 +30,31 @@
             display: flex;
             flex-direction: column;
             padding: 0 12px;
+             @include mobile {
+                padding: 0;
+                }     
         }
         
         .image img {
             height: 400px;
+            @include mobile {
+                height: 300px;
+                
+            }
         }
         .text {
             padding: 2rem;
             height: 400px;
-
+            @include mobile {
+                height: 300px;
+                padding: 1rem;
+            }
             .title {
                 font-size: 1.5rem;
+                @include mobile {
+                    font-size: 16px;
+                    width: 70%;
+                }
             }
         }
 
@@ -52,17 +69,24 @@
         }
     }
     &__future {
-        
+        @include mobile {
+            padding: 0;
+        }
         .content {
         margin-top: 20px;
-        // display: grid;
-        // grid-gap: 24px;
-        // grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
         .image img {
             height: 300px;
+            @include mobile {
+                width: 100vh;
+                height: auto;
+                object-fit: cover;
+            }
         }
         .text {
             height: 300px;
+            @include mobile {
+                height: 250px;
+            }
             padding: 12px;
             .timestamp {
                 font-size: 12px;
@@ -114,7 +138,7 @@
     }
     
     .image img {
-        width: 100px;
+        width: 200px;
         height: 100px;
         object-fit: cover;
     }

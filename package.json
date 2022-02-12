@@ -36,5 +36,15 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+   "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ]
+  }
 }
