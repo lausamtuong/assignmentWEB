@@ -6,10 +6,14 @@ import News from '../pages/news/News';
 import Payment from '../pages/payment/Payment';
 import Product from '../pages/product/Product';
 import Register from '../pages/Register/Register';
+import Contact from '../pages/Contact/Contact';
 import Detail from './detail/Detail';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 const Route_ = (props) => {
   return <div>
+    <Header />
       <Routes>
           <Route path='/product/detail/:id' element={<Detail />}/>
           <Route path='/product/payment/:id' element={<Payment />}/>
@@ -19,6 +23,7 @@ const Route_ = (props) => {
           <Route path="/register" element={<Register />}></Route>
           <Route path="/" element={<Home width={props.width} />}></Route>
       </Routes>
+      <Footer />
   </div>;
 };
 
