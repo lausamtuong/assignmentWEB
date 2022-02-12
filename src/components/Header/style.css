@@ -125,6 +125,7 @@
   background: #fff;
   transform: translateX(-100%);
   transition: all linear 0.5s;
+  z-index:10000;
 }
 .nav__tablet-list {
   display: flex;
