@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+.contact {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;   
+   align-items: center;
+   justify-content: center;
+   gap: 4rem;
+   background-image: linear-gradient(to right, #434343 0%, black 100%);
+   &__header {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #fff;
+      font-family: 'Rowdies', cursive;
+   }
+   &__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+   }
+}
