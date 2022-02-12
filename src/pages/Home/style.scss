@@ -28,7 +28,7 @@
   width: 100%;
 }
 .v-light {
-  height: 47px;
+  height: 45px;
 }
 img {
   height: auto;
@@ -131,6 +131,7 @@ img {
   letter-spacing: 1px;
   line-height: 1.5;
   font-size: 21px;
+  margin-bottom: 0px
 }
 .block-new-home-car {
   background: #fff;
@@ -219,9 +220,6 @@ img {
     .background-tablet{
       display:none;
     }
-    .deposit {
-      width: 151px;
-    }
     .down{
       height:20px;
     }
@@ -246,15 +244,26 @@ img {
       z-index: 1;
     }
     .v-light {
-      height: 55px;
+      height: 40px;
   }
   .down {
     height: 30px;
   }
+  .deposit{
+    width: 100px;
   }
+ .more-information {
+     width: 100px;  
+ }
+  }
+  @media (max-width: 900px) {
+    .v-light {
+      height: 25px;
+  }
+}
   @media (max-width: 720px) {
     .v-light {
-      height: 45px;
+      height: 25px;
   }
   .down {
     height: 25px;
@@ -273,9 +282,46 @@ img {
   @media (max-width: 550.98px) {
    
   .v-light {
-    height: 35px;
+    height: 20px;
 }
 .down {
   height: 15px;
 }
+.background__title{
+  width: 80%;
+  top:50px;
+}
+.slogan{
+  color:black
+}
   }
+  @media (max-width: 460px){
+    .v-light {
+      height: 13px;
+  }
+  }
+  @media (max-width: 400px)
+ {
+ .slogan{
+   padding:20px;
+   width: 80%;
+   font-size: 13px;
+ }
+ .background__title >p{
+  width: 80%;
+  font-size: 25px;
+}
+}
+@media (max-width: 360px)
+{
+  .deposit{
+    width: 60px;
+    font-size: 8px;
+    height: 50px
+  }
+ .more-information{
+    width: 60px;
+    font-size: 8px;
+    height: 50px
+  }
+}

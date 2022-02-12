@@ -76,4 +76,16 @@ margin-bottom: 40px;
     .img-360{
         width: 80%; 
     }
+    .Card_des-type h4{
+        font-size: 18px;
+    }
+    .Card_des-price h4{
+        font-size: 18px;
+    }
+    .Card_des-type p{
+        font-size: 12px;
+    }
+    .Card_des-price p{
+        font-size: 12px;
+    }
 }

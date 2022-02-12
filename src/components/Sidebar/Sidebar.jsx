@@ -60,7 +60,7 @@ const Sidebar = () => {
         ref={indicatorRef}
         style={{
           transform: `translateX(-50%) translateY(${
-            activeIndex * stepHeight
+            activeIndex * stepHeight +15
           }px)`,
         }}
         className="indicator"
