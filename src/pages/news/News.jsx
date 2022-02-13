@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 const News = () => {
     window.scrollTo(0,0)
   return (
-    <div className='news' style={{paddingTop:"100px"}}>
+    <div className='news' >
         <div className="news__header">
             <div className="hot__news">
                 <NewsCard 
@@ -58,8 +58,7 @@ const News = () => {
                 <Swiper
                 modules={[Navigation, Pagination, Scrollbar]}
                 spaceBetween={50}
-                slidesPerView={3}
-                navigation
+                slidesPerView='auto'
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
                 autoplay={{delay:3000}}

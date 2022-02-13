@@ -97,7 +97,7 @@ CHƯƠNG TRÌNH <span>THẺ XANH CHÀO NGÀY MỚI</span> <a href="#">Xem chươ
             </div>
             <div className="total_price">
                 <span>Giá trị đơn hàng</span>
-                <p>{item[0].price}</p>
+                <p style={{fontWeight:'bold'}}>{item[0].price}</p>
             </div>
             <div className="payment__btn">
                 <button type='submit' className={`btn btn__payment`}>Thanh toán</button>
